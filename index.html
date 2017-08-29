@@ -16,7 +16,71 @@
 </head>
 
 <body>
+    <header>
+        <div class="topbar center clearfix">
+            <div class="topbarLeft fl">
+                <ul class="clearfix">
+                    <li><a href="#">小米商城</a><span>|</span></li>
+                    <li><a href="#">MIUI</a><span>|</span></li>
+                    <li><a href="#">米聊</a><span>|</span></li>
+                    <li><a href="#">游戏</a><span>|</span></li>
+                    <li><a href="#">多看阅读</a><span>|</span></li>
+                    <li><a href="#">云服务</a><span>|</span></li>
+                    <li><a href="#">小米网移动版</a><span>|</span></li>
+                    <li><a href="#">问题反馈</a><span>|</span></li>
+                    <li><a href="#">Select Region</a></li>
+                </ul>
+            </div>
+            <div class="topbarRight fr">
+                <div class="login">
+                    <a href="#">登录</a>
+                    <span>|</span>
+                    <a href="#">注册</a>
+                </div>
+                <a href="#" class="shopCar"><i class="icon iconfont icon-gouwuche"></i>购物车(<span>0</span>)<div class="shopCarList">购物车中还没有商品，赶快选购吧！</div></a>
 
+            </div>
+        </div>
+    </header>
+    <div class="mainNav center clearfix">
+        <div class="logo fl clearfix">
+            <a href="">
+                <img src="./images/icon-mi.png" alt="">
+                <h1>小米商城，关键字........</h1>
+            </a>
+            <a href=""><img src="./images/icon-gif.gif" alt=""></a>
+        </div>
+        <ul class="zdh fl clearfix"></ul>
+        <div class="seach fr">
+            <input class="inp_text fl" type="text" name="" value="">
+            <lable class="fl" for=''><i class="iconfont icon-sousuo"></i></lable>
+            <div class="hotGoods">
+                <a href="">红米pro</a>
+                <a href="">小米笔记本air</a>
+            </div>
+            <div class="seachList">
+                <ul>
+                    <li><a href=""><span>小米手机5</span><span>约有11件</sapn></a></li>
+                    <li><a href=""><span>空气净化器2</span><span>约有1件</sapn></a></li>
+                    <li><a href=""><span>活塞耳机</span><span>约有4件</sapn></a></li>
+                    <li><a href=""><span>小米路由器</span><span>约有8件</sapn></a></li>
+                    <li><a href=""><span>移动电源</span><span>约有21件</sapn></a></li>
+                    <li><a href=""><span>运动相机</span><span>约有3件</sapn></a></li>
+                    <li><a href=""><span>小米摄像机</span><span>约有2件</sapn></a></li>
+                    <li><a href=""><span>小米体重秤</span><span>约有1件</sapn></a></li>
+                    <li><a href=""><span>小米插线板 </span><span>约有13件配件</sapn></a></li>
+                    <li><a href=""><span>优惠套装</span><span>约有32件</sapn></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
+
+<!-- 主导航 -->
+<script type="text/html" id='mainNav'>
+    {{each $data}}
+    <li data-type='{{$value.type}}'><a href="{{$value.sourceUrl}}"></a>{{$value.name}}</li>
+    {{/each}}
+</script>

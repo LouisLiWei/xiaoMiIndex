@@ -24,3 +24,8 @@ a {
 .fr {
   float: right;
 }
+
+.center {
+  margin: 0 auto;
+  max-width: 1226px;
+}

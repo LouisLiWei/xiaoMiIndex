@@ -24,3 +24,206 @@ a {
 .fr {
   float: right;
 }
+
+.center {
+  margin: 0 auto;
+  max-width: 1226px;
+}
+
+header {
+  width: 100%;
+  font-size: 12px;
+  background: #333;
+}
+
+header .topbar .topbarLeft ul li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+
+header .topbar .topbarLeft ul li a {
+  color: #999;
+  padding: 0 5px;
+}
+
+header .topbar .topbarLeft ul li a:hover {
+  color: #fff;
+}
+
+header .topbar .topbarLeft ul li span {
+  color: #999;
+}
+
+header .topbar .topbarRight .login {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+header .topbar .topbarRight .login a {
+  color: #999;
+}
+
+header .topbar .topbarRight .login a:hover {
+  color: #fff;
+}
+
+header .topbar .topbarRight .login span {
+  color: #999;
+}
+
+header .topbar .topbarRight .shopCar {
+  float: right;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  padding-left: 20px;
+  line-height: 40px;
+  color: #333;
+  background: #b0b0b0;
+}
+
+header .topbar .topbarRight .shopCar .shopCarList {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 316px;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  color: #ccc;
+  background: #fff;
+  z-index: 100;
+}
+
+header .topbar .topbarRight .shopCar:hover {
+  background: #fff;
+  color: #ff6700;
+}
+
+header .topbar .topbarRight .shopCar:hover .shopCarList {
+  color: #ccc;
+  top: 40px;
+  height: 96px;
+  line-height: 96px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px #ccc;
+}
+
+.mainNav {
+  padding: 10px 0;
+}
+
+.mainNav .logo a:first-child {
+  display: block;
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+
+.mainNav .logo a:first-child h1 {
+  font-size: 0;
+  text-indent: -9999;
+}
+
+.mainNav .logo a:last-child {
+  float: left;
+  display: block;
+  width: 163px;
+  height: 66px;
+}
+
+.mainNav .zdh li {
+  float: left;
+  padding: 0 10px;
+  line-height: 60px;
+  height: 60px;
+}
+
+.mainNav .seach {
+  position: relative;
+  width: 295px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+.mainNav .seach .inp_text {
+  width: 234px;
+  height: 50px;
+  outline: none;
+  border: none;
+  color: #666;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.mainNav .seach lable {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-left: 1px solid #ccc;
+}
+
+.mainNav .seach lable i {
+  font-size: 22px;
+}
+
+.mainNav .seach lable:hover {
+  background: #ff6700;
+  color: #fff;
+}
+
+.mainNav .seach .hotGoods {
+  position: absolute;
+  right: 50px;
+  top: 14px;
+}
+
+.mainNav .seach .hotGoods a {
+  font-size: 12px;
+  background: #ccc;
+  color: #666;
+  padding: 0 5px;
+}
+
+.mainNav .seach .hotGoods a:hover {
+  background: #ff6700;
+  color: #fff;
+}
+
+.mainNav .seach .seachList {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 294px;
+  border: 1px solid #ff6700;
+  display: none;
+}
+
+.mainNav .seach .seachList ul li {
+  height: 30px;
+  line-height: 30px;
+}
+
+.mainNav .seach .seachList ul li a span:first-child {
+  float: left;
+  color: #666;
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.mainNav .seach .seachList ul li a span:last-child {
+  float: right;
+  color: #999;
+  font-size: 10px;
+  margin-right: 15px;
+}
+
+.mainNav .seach .seachList ul li:hover {
+  background: #ffe8bd;
+}
