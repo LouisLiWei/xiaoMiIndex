@@ -143,6 +143,10 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
   height: 60px;
 }
 
+.mainNav .zdh li:hover {
+  color: #ff6700;
+}
+
 .mainNav .seach {
   position: relative;
   width: 295px;
@@ -167,6 +171,7 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
   text-align: center;
   line-height: 50px;
   border-left: 1px solid #ccc;
+  cursor: pointer;
 }
 
 .mainNav .seach lable i {
@@ -202,7 +207,9 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
   top: 50px;
   width: 294px;
   border: 1px solid #ff6700;
+  background: #fff;
   display: none;
+  z-index: 9999;
 }
 
 .mainNav .seach .seachList ul li {
@@ -226,4 +233,116 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
 
 .mainNav .seach .seachList ul li:hover {
   background: #ffe8bd;
+}
+
+.mainNavList {
+  width: 100%;
+  height: 230px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 6px #ccc;
+  display: none;
+}
+
+.mainNavList li {
+  float: left;
+  width: 180px;
+  padding-top: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.mainNavList li a {
+  display: block;
+  color: #000;
+}
+
+.mainNavList li a img {
+  width: 100%;
+  display: block;
+  border-right: 1px solid #ccc;
+}
+
+.mainNavList li a h2 {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.mainNavList li p {
+  font-size: 14px;
+  color: #ff6700;
+  margin-top: 15px;
+}
+
+.slide-wrap .center {
+  position: relative;
+}
+
+.slide-wrap .center .slide {
+  height: 460px;
+  position: relative;
+}
+
+.slide-wrap .center .slide ul li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 460px;
+}
+
+.slide-wrap .center .slide ul li a {
+  display: block;
+}
+
+.slide-wrap .center .slide ul li a img {
+  display: block;
+  width: 100%;
+}
+
+.slide-wrap .center .slide .slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  width: 40px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.slide-wrap .center .slide .slide-btn.btn-left {
+  left: 280px;
+}
+
+.slide-wrap .center .slide .slide-btn:last-child {
+  right: -20px;
+}
+
+.slide-wrap .center .slide:hover .slide-btn {
+  opacity: 0.5;
+}
+
+.slide-wrap .center .menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.slide-wrap .center .menu li {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.slide-wrap .center .menu li:hover {
+  background: #ff6700;
 }

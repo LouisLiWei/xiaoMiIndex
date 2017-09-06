@@ -15,7 +15,7 @@
     <script src="./js/index.js"></script>
 </head>
 
-<body>
+<body style="height:2000px;">
     <header>
         <div class="topbar center clearfix">
             <div class="topbarLeft fl">
@@ -50,7 +50,14 @@
             </a>
             <a href=""><img src="./images/icon-gif.gif" alt=""></a>
         </div>
-        <ul class="zdh fl clearfix"></ul>
+        <ul class="zdh fl clearfix">
+            <!-- 主导航 -->
+            <script type="text/html" id='mainNav'>
+                {{each $data}}
+                <li data-type='{{$value.type}}'><a href="{{$value.sourceUrl}}"></a>{{$value.name}}</li>
+                {{/each}}
+            </script>
+        </ul>
         <div class="seach fr">
             <input class="inp_text fl" type="text" name="" value="">
             <lable class="fl" for=''><i class="iconfont icon-sousuo"></i></lable>
@@ -74,13 +81,60 @@
             </div>
         </div>
     </div>
+    <div class="mainNavList">
+        <ul class="clearfix center">
+            <script type="text/html" id="mainNavList">
+                {{each data}}
+                <li>
+                    <a href="{{$value.sourcePath}}">
+                        <img src="{{$value.imgUrl}}" alt="">
+                        <h2>{{$value.name}}</h2>
+                    </a>
+                    <p>{{$value.price}}</p>
+                </li>
+                {{/each}}
+            </script>
+        </ul>
+    </div>
+    <div class="slide-wrap">
+        <div class="center">
+            <div class="slide">
+                <ul>
+                    <script type="text/html" id="slide">
+                        {{each $data}}
+                        <li>
+                            <a href="">
+                            <img src="{{$value.imgUrl}}" alt="">
+                        </a>
+                        </li>
+                        {{/each}}
+                    </script>
+                </ul>
+                <a class="slide-btn btn-left" href="javascrpt:;">prev</a>
+                <a class="slide-btn btn-right" href="javascrpt:;">next</a>
+
+            </div>
+            <div class="menu">
+                <ul>
+                    <script type="text/html" id="menu">
+                        {{each $data}}
+                        <li data-type={{$value.type}}>{{$value.content}}</li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
+            <div class="menuList">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="" alt="">
+                            <h4></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
-
-<!-- 主导航 -->
-<script type="text/html" id='mainNav'>
-    {{each $data}}
-    <li data-type='{{$value.type}}'><a href="{{$value.sourceUrl}}"></a>{{$value.name}}</li>
-    {{/each}}
-</script>
