@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'xiaomi';
+  src:  url('fonts/xiaomi.eot?gi6j3w');
+  src:  url('fonts/xiaomi.eot?gi6j3w#iefix') format('embedded-opentype'),
+    url('fonts/xiaomi.ttf?gi6j3w') format('truetype'),
+    url('fonts/xiaomi.woff?gi6j3w') format('woff'),
+    url('fonts/xiaomi.svg?gi6j3w#xiaomi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'xiaomi' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tools:before {
+  content: "\e901";
+}
+.icon-search:before {
+  content: "\e900";
+}
+.icon-arrow-circle-right:before {
+  content: "\e902";
+}
+.icon-library:before {
+  content: "\e921";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-credit-card:before {
+  content: "\e93f";
+}
+.icon-compass:before {
+  content: "\e949";
+}
+.icon-history:before {
+  content: "\e94d";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+.icon-loop2:before {
+  content: "\ea2e";
+}
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
