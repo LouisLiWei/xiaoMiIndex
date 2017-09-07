@@ -42,6 +42,7 @@
             </div>
         </div>
     </header>
+    <!-- 横导航 -->
     <div class="mainNav center clearfix">
         <div class="logo fl clearfix">
             <a href="">
@@ -81,6 +82,7 @@
             </div>
         </div>
     </div>
+    <!-- 横导航下拉部分 -->
     <div class="mainNavList">
         <ul class="clearfix center">
             <script type="text/html" id="mainNavList">
@@ -96,6 +98,7 @@
             </script>
         </ul>
     </div>
+    <!-- 轮播及左侧主导航 -->
     <div class="slide-wrap">
         <div class="center">
             <div class="slide">
@@ -130,6 +133,7 @@
             </div>
         </div>
     </div>
+    <!-- 轮播下方 -->
     <div class="top_sub clearfix">
         <div class="sub_left fl">
             <ul class="clearfix">
@@ -195,6 +199,40 @@
                     </a>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <!-- 硬件部分 -->
+    <div class="znyj center">
+        <div class="header clearfix">
+            <h3>智能硬件</h3>
+            <a href="">
+                <span>查看全部</span><i class="iconfont  icon-you"></i>
+            </a>
+        </div>
+        <div class="body clearfix">
+            <div class="bodyL">
+                <a href="">
+                    <img src="./images/hardware.jpg" alt="">
+                </a>
+            </div>
+            <div class="bodyR">
+                <ul class="clearfix">
+                    <script type="text/html" id="znyj">
+                        {{each $data}}
+                        <li>
+                            <span class="discount">{{$value.discount}}</span>
+                            <a href="{{$value.sourceUrl}}">
+                                <img src="{{$value.imgUrl}}" alt="">
+                                <h4>{{$value.title}}</h4>
+                                <p class="desc">{{$value.desc}}</p>
+                                <p class="price">{{$value.price}}元</p>
+                            </a>
+                        </li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
         </div>
     </div>
 </body>

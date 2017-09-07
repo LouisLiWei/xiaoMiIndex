@@ -148,6 +148,17 @@ $(function () {
             })
         }
     })
+    // 硬件部分
+    $.ajax({
+        url: url + '/hardware',
+        success: function (data) {
+            // console.log(data);
+            var $data = JSON.parse(data);
+            var res = template('znyj', $data);
+            console.log(res);
+            $('.znyj .body .bodyR ul').html(res);
+        }
+    })
 
 
 })

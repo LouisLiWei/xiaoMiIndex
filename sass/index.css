@@ -483,3 +483,122 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
   width: 316px;
   height: 170px;
 }
+
+.znyj {
+  padding: 60px 0 26px;
+  background: #f5f5f5;
+}
+
+.znyj .header {
+  height: 58px;
+  line-height: 58px;
+  padding: 0 15px;
+}
+
+.znyj .header h3 {
+  float: left;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.znyj .header a {
+  float: right;
+}
+
+.znyj .header a span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.znyj .header a i {
+  color: #ff6700;
+  font-size: 20px;
+}
+
+.znyj .body {
+  margin-top: 10px;
+}
+
+.znyj .body .bodyL {
+  float: left;
+}
+
+.znyj .body .bodyL a {
+  display: block;
+}
+
+.znyj .body .bodyL a img {
+  display: block;
+}
+
+.znyj .body .bodyL a:hover {
+  box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+}
+
+.znyj .body .bodyR {
+  margin-left: 10px;
+  float: left;
+}
+
+.znyj .body .bodyR ul {
+  width: 980px;
+}
+
+.znyj .body .bodyR ul li {
+  position: relative;
+  width: 230px;
+  height: 260px;
+  padding: 20px 0;
+  margin: 0 0 14px 14px;
+  float: left;
+  background: #fff;
+}
+
+.znyj .body .bodyR ul li span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 64px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: #f20;
+}
+
+.znyj .body .bodyR ul li a {
+  display: block;
+}
+
+.znyj .body .bodyR ul li a img {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+}
+
+.znyj .body .bodyR ul li a h4 {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.znyj .body .bodyR ul li a .desc {
+  text-align: center;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.znyj .body .bodyR ul li a .price {
+  text-align: center;
+  font-size: 14px;
+  color: #ff6700;
+}
+
+.znyj .body .bodyR ul li:hover {
+  box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+}
