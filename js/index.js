@@ -1,9 +1,9 @@
 $(function () {
-    var url = 'http://192.168.70.63:9900/api';
+    var url = 'http://192.168.1.102:9900/api';
 
     //主导航
     $.ajax({
-        url: 'http://192.168.70.63:9900/api/nav',
+        url: 'http://192.168.1.102:9900/api/nav',
         datatype: 'json',
         success: function (data) {
             var $data = JSON.parse(data);
@@ -105,6 +105,47 @@ $(function () {
             var $data = JSON.parse(data);
             var res = template('menu', $data);
             $('.menu ul').html(res);
+
+            //鼠标移动点li上
+            $('.menu li').hover(function () {
+                var type = $(this).attr('data-type');
+                $.ajax({
+                    url: url + "/items",
+                    data: {
+                        type: type
+                    },
+                    dataType: "json",
+                    success: function (backData) {
+                        var ulLen = Math.ceil(backData.length / 6);
+                        $(".menuList").empty();
+                        for (var i = 0; i < ulLen; i++) {
+                            var ul = document.createElement("ul");
+                            if (i < ulLen - 1) {
+                                for (var j = 0; j < 6; j++) {
+                                    var str = backData[i * 6 + j].buyStatus == "true" ? '<li><a href="' + backData[i * 6 + j].sourceUrl + '"> <img src="' + backData[i * 6 + j].imgUrl + '" alt=""> <h4>' + backData[i * 6 + j].name + '</h4> </a> <a href="' + backData[i * 6 + j].buyUrl + '">选购</a> </li>' : '<li><a href="' + backData[i * 6 + j].sourceUrl + '"> <img src="' + backData[i * 6 + j].imgUrl + '" alt=""> <h4>' + backData[i * 6 + j].name + '</h4> </a> <a  class="buyStatus" href="' + backData[i * 6 + j].buyUrl + '">选购</a> </li>';
+                                    $(ul).append(str);
+                                }
+                            } else {
+                                for (var k = 0; k < (backData.length - (ulLen - 1) * 6); k++) {
+                                    var str = backData[i * 6 + k].buyStatus == "true" ? '<li><a href="' + backData[i * 6 + k].sourceUrl + '"> <img src="' + backData[i * 6 + k].imgUrl + '" alt=""> <h4>' + backData[i * 6 + k].name + '</h4> </a> <a href="' + backData[i * 6 + k].buyUrl + '">选购</a> </li>' : '<li><a href="' + backData[i * 6 + k].sourceUrl + '"> <img src="' + backData[i * 6 + k].imgUrl + '" alt=""> <h4>' + backData[i * 6 + k].name + '</h4> </a> <a href="' + backData[i * 6 + k].buyUrl + '" class="buyStatus"></a> </li>';
+                                    $(ul).append(str);
+                                }
+                            }
+                            $(".menuList").append(ul);
+                        }
+
+                    }
+                });
+                $('.menuList').stop().show();
+            }, function () {
+                $('.menuList').stop().hide();
+            })
+
+            $('.menuList').hover(function () {
+                $(this).stop().show();
+            }, function () {
+                $(this).stop().hide();
+            })
         }
     })
 

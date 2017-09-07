@@ -8,6 +8,7 @@ ul {
 }
 
 a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -345,4 +346,140 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
 
 .slide-wrap .center .menu li:hover {
   background: #ff6700;
+}
+
+.slide-wrap .center .menuList {
+  position: absolute;
+  left: 260px;
+  top: 0;
+  height: 460px;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 5px 8px #ccc;
+  background: #fff;
+  display: none;
+}
+
+.slide-wrap .center .menuList ul {
+  float: left;
+}
+
+.slide-wrap .center .menuList ul li {
+  position: relative;
+  padding: 20px 20px 20px 30px;
+  width: 240px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.slide-wrap .center .menuList ul li a:first-child {
+  float: left;
+  margin-right: 15px;
+}
+
+.slide-wrap .center .menuList ul li a:first-child img {
+  float: left;
+  margin-right: 5px;
+}
+
+.slide-wrap .center .menuList ul li a:first-child h4 {
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.slide-wrap .center .menuList ul li a:last-child {
+  float: right;
+  border: 1px solid #ff6700;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.slide-wrap .center .menuList ul li a:last-child.buyStatus {
+  display: none;
+  border: none;
+}
+
+.slide-wrap .center .menuList ul li a:last-child:hover {
+  background: #ff6700;
+  color: #fff;
+}
+
+.top_sub {
+  max-width: 1226px;
+  margin: 0 auto;
+  height: 170px;
+  margin-top: 20px;
+}
+
+.top_sub .sub_left {
+  width: 234px;
+  height: 170px;
+  background: #5f5750;
+}
+
+.top_sub .sub_left li {
+  float: left;
+  width: 75px;
+  position: relative;
+}
+
+.top_sub .sub_left li > a {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.top_sub .sub_left li > a:hover i,
+.top_sub .sub_left li > a:hover p {
+  color: #fff;
+}
+
+.top_sub .sub_left li > a > i {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #b1b1b1;
+}
+
+.top_sub .sub_left li > a > p {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #b1b1b1;
+}
+
+.top_sub .sub_left li .line {
+  width: 1px;
+  height: 60px;
+  display: inline-block;
+  background: #b1b1b1;
+  position: absolute;
+  right: 0;
+  top: 14px;
+}
+
+.top_sub .sub_left .line_w {
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background: #b1b1b1;
+  margin: 0 7px;
+}
+
+.top_sub .sub_right > ul {
+  display: flex;
+}
+
+.top_sub .sub_right > ul li {
+  flex: 1;
+  margin-left: 14px;
+}
+
+.top_sub .sub_right > ul li a {
+  display: block;
+}
+
+.top_sub .sub_right > ul li a img {
+  width: 316px;
+  height: 170px;
 }

@@ -287,5 +287,122 @@ header {
                 }
             }
         }
+        .menuList {
+            position: absolute;
+            left: 260px;
+            top: 0;
+            height: 460px;
+            border-top: 1px solid #ccc;
+            box-shadow: 0 5px 8px #ccc;
+            background: #fff;
+            display: none;
+            ul {
+                float: left;
+                li {
+                    position: relative;
+                    padding: 20px 20px 20px 30px;
+                    width: 240px;
+                    height: 34px;
+                    line-height: 34px;
+                    a:first-child {
+                        float: left;
+                        margin-right: 15px;
+                        img {
+                            float: left;
+                            margin-right: 5px;
+                        }
+                        h4 {
+                            float: left;
+                            font-size: 14px;
+                            font-weight: normal;
+                        }
+                    }
+                    a:last-child {
+                        float: right;
+                        border: 1px solid #ff6700;
+                        font-size: 14px;
+                        padding: 0 10px;
+                        &.buyStatus {
+                            display: none;
+                            border: none;
+                        }
+                        &:hover {
+                            background: #ff6700;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top_sub {
+    max-width: 1226px;
+    margin: 0 auto;
+    height: 170px;
+    margin-top: 20px;
+    .sub_left {
+        width: 234px;
+        height: 170px;
+        background: #5f5750;
+        li {
+            float: left;
+            width: 75px; // height: 82px;
+            position: relative;
+            >a {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 20px;
+                &:hover i,
+                &:hover p {
+                    color: #fff;
+                }
+                >i {
+                    font-size: 20px;
+                    margin-top: 15px;
+                    color: #b1b1b1;
+                }
+                >p {
+                    padding-top: 10px;
+                    font-size: 12px;
+                    color: #b1b1b1;
+                }
+            }
+            .line {
+                width: 1px;
+                height: 60px;
+                display: inline-block;
+                background: #b1b1b1;
+                position: absolute;
+                right: 0;
+                top: 14px;
+            }
+        }
+        .line_w {
+            display: inline-block;
+            width: 60px;
+            height: 1px;
+            background: #b1b1b1;
+            margin: 0 7px;
+        }
+    }
+    .sub_right {
+        >ul {
+            display: flex;
+            li {
+                flex: 1;
+                margin-left: 14px;
+                a {
+                    display: block;
+                    img {
+                        width: 316px;
+                        height: 170px;
+                    }
+                }
+            }
+        }
     }
 }
