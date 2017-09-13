@@ -316,7 +316,7 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
 }
 
 .slide-wrap .center .slide .slide-btn.btn-left {
-  left: 280px;
+  left: 254px;
 }
 
 .slide-wrap .center .slide .slide-btn:last-child {
@@ -331,7 +331,7 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
   position: absolute;
   left: 0;
   top: 0;
-  width: 260px;
+  width: 234px;
   padding: 20px 0;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -350,7 +350,7 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
 
 .slide-wrap .center .menuList {
   position: absolute;
-  left: 260px;
+  left: 235px;
   top: 0;
   height: 460px;
   border-top: 1px solid #ccc;
@@ -484,68 +484,68 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
   height: 170px;
 }
 
-.znyj {
+.container {
   padding: 60px 0 26px;
   background: #f5f5f5;
 }
 
-.znyj .header {
+.container .header {
   height: 58px;
   line-height: 58px;
   padding: 0 15px;
 }
 
-.znyj .header h3 {
+.container .header h3 {
   float: left;
   font-weight: 300;
   font-size: 24px;
 }
 
-.znyj .header a {
+.container .header a {
   float: right;
 }
 
-.znyj .header a span {
+.container .header a span {
   font-size: 16px;
   margin-right: 5px;
 }
 
-.znyj .header a i {
+.container .header a i {
   color: #ff6700;
   font-size: 20px;
 }
 
-.znyj .body {
+.container .body {
   margin-top: 10px;
 }
 
-.znyj .body .bodyL {
+.container .body .bodyL {
   float: left;
 }
 
-.znyj .body .bodyL a {
+.container .body .bodyL a {
   display: block;
 }
 
-.znyj .body .bodyL a img {
+.container .body .bodyL a img {
   display: block;
 }
 
-.znyj .body .bodyL a:hover {
+.container .body .bodyL a:hover {
   box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.5);
   transform: translateY(-3px);
 }
 
-.znyj .body .bodyR {
+.container .body .bodyR {
   margin-left: 10px;
   float: left;
 }
 
-.znyj .body .bodyR ul {
+.container .body .bodyR ul {
   width: 980px;
 }
 
-.znyj .body .bodyR ul li {
+.container .body .bodyR ul li {
   position: relative;
   width: 230px;
   height: 260px;
@@ -555,7 +555,7 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
   background: #fff;
 }
 
-.znyj .body .bodyR ul li span {
+.container .body .bodyR ul li span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -566,39 +566,147 @@ header .topbar .topbarRight .shopCar:hover .shopCarList {
   font-size: 12px;
   text-align: center;
   color: #fff;
-  background: #f20;
+  display: none;
 }
 
-.znyj .body .bodyR ul li a {
+.container .body .bodyR ul li span.free {
+  background: orange;
   display: block;
 }
 
-.znyj .body .bodyR ul li a img {
+.container .body .bodyR ul li span.new {
+  background: red;
+  display: block;
+}
+
+.container .body .bodyR ul li span.discount {
+  background: green;
+  display: block;
+}
+
+.container .body .bodyR ul li a {
+  display: block;
+}
+
+.container .body .bodyR ul li a img {
   display: block;
   margin: 0 auto;
   width: 160px;
 }
 
-.znyj .body .bodyR ul li a h4 {
+.container .body .bodyR ul li a h4 {
   font-weight: 300;
   font-size: 14px;
   text-align: center;
   line-height: 30px;
 }
 
-.znyj .body .bodyR ul li a .desc {
+.container .body .bodyR ul li a .desc {
   text-align: center;
   font-size: 12px;
   line-height: 40px;
 }
 
-.znyj .body .bodyR ul li a .price {
+.container .body .bodyR ul li a .price {
   text-align: center;
   font-size: 14px;
   color: #ff6700;
 }
 
-.znyj .body .bodyR ul li:hover {
+.container .body .bodyR ul li:hover {
   box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.5);
   transform: translateY(-3px);
+}
+
+.container .toptitle {
+  height: 58px;
+  line-height: 58px;
+}
+
+.container .toptitle h3 {
+  float: left;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.container .toptitle ul {
+  float: right;
+}
+
+.container .toptitle ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.container .goodscontent .leftGoods {
+  float: left;
+}
+
+.container .goodscontent .leftGoods li a {
+  display: block;
+}
+
+.container .goodscontent .leftGoods li a img {
+  width: 234px;
+  display: block;
+}
+
+.container .goodscontent .leftGoods li:last-child {
+  margin-top: 16px;
+}
+
+.container .goodscontent .rightGoods {
+  float: left;
+  width: 980px;
+}
+
+.container .goodscontent .rightGoods li {
+  position: relative;
+  width: 230px;
+  height: 260px;
+  padding: 20px 0;
+  margin: 0 0 14px 14px;
+  float: left;
+  background: #fff;
+}
+
+.container .goodscontent .rightGoods li a {
+  display: block;
+}
+
+.container .goodscontent .rightGoods li a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 64px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
+.container .goodscontent .rightGoods li a img {
+  width: 160px;
+}
+
+.container .goodscontent .rightGoods li a h4 {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.container .goodscontent .rightGoods li a .price {
+  text-align: center;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.container .goodscontent .rightGoods li a .heat {
+  text-align: center;
+  font-size: 14px;
+  color: #ff6700;
 }

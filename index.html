@@ -77,7 +77,7 @@
                     <li><a href=""><span>小米摄像机</span><span>约有2件</sapn></a></li>
                     <li><a href=""><span>小米体重秤</span><span>约有1件</sapn></a></li>
                     <li><a href=""><span>小米插线板 </span><span>约有13件配件</sapn></a></li>
-                    <li><a href=""><span>优惠套装</span><span>约有32件</sapn></a></li>
+                    <li><a href=""><span>优惠套装</span><div>约有32件</sapn></a></li>
                 </ul>
             </div>
         </div>
@@ -203,38 +203,104 @@
     </div>
 
     <!-- 硬件部分 -->
-    <div class="znyj center">
-        <div class="header clearfix">
-            <h3>智能硬件</h3>
-            <a href="">
-                <span>查看全部</span><i class="iconfont  icon-you"></i>
-            </a>
-        </div>
-        <div class="body clearfix">
-            <div class="bodyL">
-                <a href="">
-                    <img src="./images/hardware.jpg" alt="">
+    <div class="container">
+        <div class="center">
+            <div class="znyj">
+                <div class="header clearfix">
+                    <h3>智能硬件</h3>
+                    <a href="">
+                    <span>查看全部</span><i class="iconfont  icon-you"></i>
                 </a>
+                </div>
+                <div class="body clearfix">
+                    <div class="bodyL">
+                        <a href="">
+                        <img src="./images/hardware.jpg" alt="">
+                    </a>
+                    </div>
+                    <div class="bodyR">
+                        <ul class="clearfix">
+                            <script type="text/html" id="znyj">
+                                {{each $data}}
+                                <li>
+                                    <span class="{{$value.discountType}}">{{$value.discount}}</span>
+                                    <a href="{{$value.sourceUrl}}">
+                                    <img src="{{$value.imgUrl}}" alt="">
+                                    <h4>{{$value.title}}</h4>
+                                    <p class="desc">{{$value.desc}}</p>
+                                    <p class="price">{{$value.price}}元</p>
+                                </a>
+                                </li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="bodyR">
-                <ul class="clearfix">
-                    <script type="text/html" id="znyj">
-                        {{each $data}}
-                        <li>
-                            <span class="discount">{{$value.discount}}</span>
-                            <a href="{{$value.sourceUrl}}">
-                                <img src="{{$value.imgUrl}}" alt="">
-                                <h4>{{$value.title}}</h4>
-                                <p class="desc">{{$value.desc}}</p>
-                                <p class="price">{{$value.price}}元</p>
-                            </a>
-                        </li>
+
+            <!-- 搭配 配件 周边 -->
+            <div class="seri"></div>
+
+            <script type="text/html" id="parentTemp">
+                <div class="toptitle clearfix">
+                    <h3>{{topTitleName}}</h3>
+                    <ul class="clearfix">
+                        {{each subs}}
+                        <li data-key="{{$value.key}}">{{$value.name}}</li>
                         {{/each}}
-                    </script>
-                </ul>
-            </div>
+                    </ul>
+                </div>
+                <div class="goodscontent clearfix">
+                    <div class="leftGoods">
+                        <ul>
+                            {{each leftGoods}}
+                            <li>
+                                <a href="{{$value.sourceUrl}}">
+                                    <img src="{{$value.imgUrl}}" alt="">
+                                </a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="rightGoods">
+                        <ul class="clearfix">
+
+                        </ul>
+                    </div>
+                </div>
+            </script>
+            <script type="text/html" id="subTemp">
+                {{each datas}}
+                <li>
+                    <a href="{{$value.sourceUrl}}">
+                        {{if $value.discount}}
+                        <span>{{$value.discountType}}</span>
+                        {{/if}}
+                        <img src="{{$value.imgUrl}}" alt="">
+                        <h4 class="title">{{$value.title}}</h4>
+                        <p class="price">{{$value.price}}
+                            {{if $value.oldprice}}元
+                            <s class="oldprice">{{$value.oldPrice}}</s>
+                            {{/if}}
+                        </p>
+                        
+                        <p class="heat">{{$value.heat}}人评价</p>
+                        {{if $value.revierStatus}}
+                        <div class="revierStatus">
+                            <p class="revierDesc">{{$value.reviewDesc}}</p>
+                            <span class="revierAuthor">{{$value.reviewAuthor}}</span>
+                        </div>
+                        {{/if}}
+
+                    </a>
+                </li>
+                {{/each}}
+            </script>
         </div>
     </div>
+
+
+
 </body>
 
 </html>

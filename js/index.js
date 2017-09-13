@@ -152,13 +152,41 @@ $(function () {
     $.ajax({
         url: url + '/hardware',
         success: function (data) {
-            // console.log(data);
             var $data = JSON.parse(data);
+            // console.log($data);
             var res = template('znyj', $data);
-            console.log(res);
             $('.znyj .body .bodyR ul').html(res);
         }
     })
 
+    // 搭配 配件 周边
+    $.ajax({
+        url: url + '/product',
+        data: {
+            toptitle: 'match'
+        },
+        dataType: 'json',
+        success: function (data) {
+            console.log(data);
+            var res = template('parentTemp', data);
+            $('.seri').append(res);
+
+
+            $.ajax({
+                url: url + '/product',
+                data: {
+                    key: 'hotgoods'
+                },
+                dataType: 'json',
+                success: function (data) {
+                    // console.log(data)
+                    var sub = template('subTemp', data);
+                    // console.log(sub);
+                    $('.rightGoods ul').html(sub)
+                }
+            })
+
+        }
+    })
 
 })
